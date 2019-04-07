@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Nff-5k-zbl">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="bgT-Ft-Zuw">
+            <objects>
+                <viewController storyboardIdentifier="ViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Nff-5k-zbl" customClass="ViewController" customModule="FlickrWorldAroundMe" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="M7L-HK-lhF">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="UEc-29-gPC">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="UEc-29-gPC" firstAttribute="top" secondItem="j2P-er-FXe" secondAttribute="top" id="99a-m6-UH9"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="UEc-29-gPC" secondAttribute="bottom" id="9wr-Tr-KSo"/>
+                            <constraint firstItem="UEc-29-gPC" firstAttribute="leading" secondItem="j2P-er-FXe" secondAttribute="leading" id="eR3-fe-T6n"/>
+                            <constraint firstItem="j2P-er-FXe" firstAttribute="trailing" secondItem="UEc-29-gPC" secondAttribute="trailing" id="okP-3j-Mws"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="j2P-er-FXe"/>
+                    </view>
+                    <connections>
+                        <outlet property="mapView" destination="UEc-29-gPC" id="eHC-p5-Fin"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EXK-vB-dEJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-450" y="-51"/>
+        </scene>
+    </scenes>
+</document>

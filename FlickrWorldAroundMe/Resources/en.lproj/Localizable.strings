@@ -1,0 +1,26 @@
+/* 
+  Localizable.strings
+  FlickrWorldAroundMe
+
+  Created by Daniele Salvioni on 24/03/2019.
+  Copyright © 2019 Daniele Salvioni. All rights reserved.
+*/
+
+// ALERT
+"info.title"                                    = "Info";
+"info.button"                                   = "Ok";
+"info.cancel"                                   = "Cancel";
+
+"attention.title"                               = "Attention";
+"attention.button"                              = "Ok";
+"attention.cancel"                              = "Cancel";
+
+"error.title"                                   = "Error";
+"error.button"                                  = "Ok";
+"error.cancel"                                  = "Cancel";
+
+
+// ACTIVITY
+"activity.loading.title.message"                = "Loading...";
+"activity.success.title.message"                = "Success!";
+"activity.failure.title.message"                = "Failure!";
